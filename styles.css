@@ -1,0 +1,38 @@
+body {
+    background-color: blue;
+    margin: 0;
+    height: 100vh; /* Set the body to take up the full viewport height */
+    display: flex; /* Apply flexbox to the body as well */
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the container also takes up the full height */
+}
+
+.flex-item {
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    margin: 100px;
+    
+}
+.lebron .buttonstyle{
+    background-image: url("images/lebron.jpg");
+}
+.steph .buttonstyle{
+    background-image: url("./images/steph.jpg");
+
+}
+.jordan .buttonstyle{
+    background-image: url("images/jordan.jpg");
+}
+.buttonstyle{
+    height:400px;
+    width: 400px;
+    
+}
