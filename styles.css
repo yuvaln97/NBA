@@ -26,6 +26,24 @@ body {
     height: 100%; /* Full height of the parent container */
     width: 100%; /* Full width of the parent container */
 }
+.lebron .buttonstyle {
+    background-image: url("./images/lebron.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.steph .buttonstyle {
+    background-image: url("./images/steph.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jordan .buttonstyle {
+    background-image: url("./images/jordan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .buttonstyle {
     height: 400px;
@@ -43,26 +61,25 @@ body {
         width: 300px; /* Smaller width for mobile */
         margin: 10px; /* Smaller margin for mobile */
     }
-
     .buttonstyle {
         height: 200px;
         width: 200px;
     }
 
     .lebron .buttonstyle {
-        background-image: url("../images/lebron.jpg");
+        background-image: url("./images/lebron.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
     
     .steph .buttonstyle {
-        background-image: url("../images/steph.jpg");
+        background-image: url("./images/steph.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
     
     .jordan .buttonstyle {
-        background-image: url("../images/jordan.jpg");
+        background-image: url("./images/jordan.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
