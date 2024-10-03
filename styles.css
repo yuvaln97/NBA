@@ -1,8 +1,8 @@
 body {
     background-color: blue;
     margin: 0;
-    height: 100vh; /* Set the body to take up the full viewport height */
-    display: flex; /* Apply flexbox to the body as well */
+    height: 100vh; /* Full viewport height */
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -11,35 +11,59 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ensure the container also takes up the full height */
+    height: 100vh;
 }
 
 .flex-item {
-    background-color: white;
     height: 400px;
     width: 400px;
-    margin: 100px;
-    
+    margin: 20px; /* Reduced margin */
 }
-.lebron .buttonstyle{
-    background-image: url("images/lebron.jpg");
-}
-.steph .buttonstyle{
-    background-image: url("./images/steph.jpg");
 
+.lebron .buttonstyle, .steph .buttonstyle, .jordan .buttonstyle {
+    background-size: cover; /* Ensure background images cover the button */
+    background-repeat: no-repeat;
+    height: 100%; /* Full height of the parent container */
+    width: 100%; /* Full width of the parent container */
 }
-.jordan .buttonstyle{
-    background-image: url("images/jordan.jpg");
-}
-.buttonstyle{
-    height:400px;
+
+.buttonstyle {
+    height: 400px;
     width: 400px;
-    
 }
+
+/* Media Queries for Mobile Devices */
 @media (max-width: 600px) {
-    /* Stack items vertically on small screens */
-    .container {
+    .container{
+        display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+    .flex-item {
+        height: 200px; /* Smaller height for mobile */
+        width: 300px; /* Smaller width for mobile */
+        margin: 10px; /* Smaller margin for mobile */
+    }
+
+    .buttonstyle {
+        height: 200px;
+        width: 200px;
+    }
+
+    .lebron .buttonstyle {
+        background-image: url("../images/lebron.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .steph .buttonstyle {
+        background-image: url("../images/steph.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .jordan .buttonstyle {
+        background-image: url("../images/jordan.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
